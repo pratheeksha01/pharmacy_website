@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	fieldset{
+		border-radius: 20px;
+         margin-right :150px;
+		margin-left:150px;
+		margin-top: 30px;
+		background-color: #e9f2ed;
+	}
+	li{
+			display: inline;
+			padding: 50px;
+		}
+	.branches{
+            display: inline-block;
+		}
+		tr{
+			margin: 100px;
+		}
+		table{
+
+		}
+		td{
+			margin-left: 50px;
+			margin-right:50px;
+		}
+		span{
+			color:red;
+		}
+		body
+		{
+			background-image: url('back2.png');
+			background-repeat: repeat;
+		}
+		.nav{
+			background-color: white;
+			padding: 1px;
+		}
+		a{
+			text-decoration: none;
+			 color: #4de85a;
+			}
+		li{
+			font-family: "Times New Roman";
+		}
+		a:hover{color: #34eb89}
+	</style>
+</head>
+<body>
+<form >
+	<div class="nav">
+<nav>
+	<ul>
+		<li><a href="home.html">HOME</a></li>
+		<li><a href="services">SERVICES</a></li>
+		<li><a href="gallery.html">GALLERY</a></li>
+		<li><img width="100" height="40" src="logo.jpg"></li>
+		<li><a href="#">CAREER</a></li>
+		<li><a href="med.html">MEDICINES</a></li>
+        <li><a href="signuplogin.html">SHOP</a></li>
+	</ul>
+</nav>
+</div>
+	<fieldset align="left" style="border-color:#57bc72;color:#57bc72;">
+		<legend>PERSONAL DETAILS</legend>
+		<table  cellspacing="10" cellpadding="20" align="center">
+			<tr>
+				<td>NAAME:<span>*</span></td>
+				<td><input type="text" name="name" required></td>
+			</tr>
+			<tr>
+				<td>DOB:<span>*</span></td>
+<td><input type="date" name="dob" required></td>
+			</tr>
+			<tr>
+				<td>ADDRESS:<span>*</span></td>
+				<td><textarea rows="4"cols="18"></textarea></td>
+			</tr>
+			<tr>
+				<td>MARITAL STATUS:<span>*</span></td>
+				
+				<td>SINGLE:<input type="radio" name="ms" required></td>
+				
+				<td>married:<input type="radio" name="ms" required></td>
+				
+				<td>divorce:<input type="radio" name="ms" required></td>
+			</tr>
+			<tr>
+				<td>NATIONALITY:<span>*</span></td>
+				<td><input type="text" name="name" required></td>
+			</tr>
+		</table>
+	</fieldset>
+	<fieldset align="left"  style="border-color:#57bc72;color:#57bc72;">
+		<legend>CONTACT DETAILS</legend>
+		<table cellspacing="10" cellpadding="20" align="center">
+			<tr>
+				<td>EMAIL:<span>*</span></td>
+				<td><input type="email" name="email" required></td>
+			</tr>
+				<tr>
+				<td>PHONE:<span>*</span></td>
+				<td><input type="text" name="phone" required></td>
+				</tr>
+		</table>
+		
+	</fieldset>
+	<fieldset align="left"  style="border-color:#57bc72;color:#57bc72;">
+		<legend>QUALIFICATION</legend>
+		<table cellspacing="10" cellpadding="20" align="center">
+			<tr>
+				<td >ACADEMIC:</td>
+				<td><input type="text" name="ac" required></td>
+			</tr>
+			<tr>
+				<td>COMPUTER KNOWLEDGE:</td>
+				<td><input type="text" name="ck"></td>
+			</tr>
+		</table>
+		
+	</fieldset>
+	<fieldset align="left" style="border-color:#57bc72;color:#57bc72;">
+		<legend>WORK EXPERIENCE</legend>
+		<table cellspacing="20" cellpadding="20" align="center">
+			<tr>
+				<td>COMPANY:</td>
+				<td><input type="text" name="company" ></td>
+			</tr>
+			<tr>
+				<td>DESIGNATION:</td>
+				<td><input type="text" name="ck"></td>
+			</tr>
+			<tr>
+				<td>EXPERIENCE IN YR:</td>
+				<td><input type="text" name="exp"></td>
+			</tr>
+			</table>
+		</fieldset>
+		<div align="center">
+		
+		<p ><input type="checkbox" name="cc" required onchange='checkboxx(this);'>I hereby declare that all the above information is true and correct to the best of my knowledge and belief.
+</p>
+<div class="c"><input type="submit" name="sub" clas="c" ></div>
+</div>
+		
+		
+	
+</form>
+<script >
+	function checkboxx(checkbox)
+	{
+		if(checkbox.checked==true)
+		{
+			alert("click on submit to submit the form");
+		}
+	}
+</script>
+</body>
+</html>

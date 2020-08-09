@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<?php
+   include 'connection.php'
+?>
+
+<html>
+<head>
+	<title>
+		shopping 
+	</title>
+<body>
+	<center>
+<table  cellpadding="20" cellspacing="20" >
+	<caption>SHOP ONLINE</caption>
+	<tr>
+		<th>
+			product
+		</th>
+		<th>
+			image
+		</th>
+		<th>
+			price
+		</th>
+		<th>
+			quantity
+		</th>
+		<th>
+			add to cart
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Iodex
+		</td>
+		<td>
+			<img height="100" width="150" src="iodex-pack.png">
+		</td>
+		<td>
+			200
+		</td>
+		<td>
+			<input type="text" name="">
+		</td>
+		
+		<td>
+                    <!--Checks if iodex with item_id 1 is added to the cart or not. if it is added then
+                     that button text is changed to "Added to cart" if not then it remains as "Add to cart".
+                    -->
+                    
+                        <?php                                                          
+                            if (check_if_added(1)) {   
+                              echo '<a href="#" class="btn btn-block btn-success" disabled>Added to cart</a>';
+                            } else {                                    
+                        ?> 
+                    
+                    <!--on click of the button its redirected to cart-add.php page where its inserted 
+                      into the user_items table-->
+                          <a href="cart-add.php?id=1" class="btn btn-block btn-primary" role="button">Add to cart</a>   
+                        <?php                           
+                            }                                              
+                        ?>
+                    </td>
+	</tr>
+	<tr>
+		<td>
+			Kellogs
+		</td>
+		<td>
+			<img height="200" width="150" src="kellogs.jpg">
+		</td>
+		<td>
+			150
+		</td>
+		<td>
+			<input type="text" name="quantity">
+		</td>
+		
+		<td>
+                    <!-- remove this button and write the same thing with "check_if_added_to_cart(2)" and 
+                        id=2 and goes on 3,4,5... as per the number of items in user_products table-->
+			<button>AddToCart</button>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Iodex
+		</td>
+		<td>
+			<img height="100" width="150" src="iodex-pack.png">
+		</td>
+		<td>
+			200
+		</td>
+		<td>
+			<input type="text" name="">
+		</td>
+		
+		<td>
+			<button>AddToCart</button>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Kellogs
+		</td>
+		<td>
+			<img height="200" width="150" src="kellogs.jpg">
+		</td>
+		<td>
+			150
+		</td>
+		<td>
+			<input type="text" name="quantity">
+		</td>
+		
+		<td>
+			<button>AddToCart</button>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Iodex
+		</td>
+		<td>
+			<img height="100" width="150" src="iodex-pack.png">
+		</td>
+		<td>
+			200
+		</td>
+		<td>
+			<input type="text" name="">
+		</td>
+		
+		<td>
+			<button>AddToCart</button>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Kellogs
+		</td>
+		<td>
+			<img height="200" width="150" src="kellogs.jpg">
+		</td>
+		<td>
+			150
+		</td>
+		<td>
+			<input type="text" name="quantity">
+		</td>
+		
+		<td>
+			<button>AddToCart</button>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Iodex
+		</td>
+		<td>
+			<img height="100" width="150" src="iodex-pack.png">
+		</td>
+		<td>
+			200
+		</td>
+		<td>
+			<input type="text" name="">
+		</td>
+		
+		<td>
+			<button>AddToCart</button>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Kellogs
+		</td>
+		<td>
+			<img height="200" width="150" src="kellogs.jpg">
+		</td>
+		<td>
+			150
+		</td>
+		<td>
+			<input type="text" name="quantity">
+		</td>
+		
+		<td>
+			<button>AddToCart</button>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Iodex
+		</td>
+		<td>
+			<img height="100" width="150" src="iodex-pack.png">
+		</td>
+		<td>
+			200
+		</td>
+		<td>
+			<input type="text" name="">
+		</td>
+		
+		<td>
+			<button>AddToCart</button>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Kellogs
+		</td>
+		<td>
+			<img height="200" width="150" src="kellogs.jpg">
+		</td>
+		<td>
+			150
+		</td>
+		<td>
+			<input type="text" name="quantity">
+		</td>
+		
+		<td>
+			<button>AddToCart</button>
+		</td>
+	</tr>
+</table>
+<input type="button" value="view cart" onclick="parent.location='cart.html'">
+</center>
+</body>
+</html>

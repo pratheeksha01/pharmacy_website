@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pharmacy</title>
+	<style type="text/css">
+	.arrival{
+color:#57bc72;
+	}
+		li{
+			display: inline;
+			padding: 50px;
+		}
+		.image.slider
+		{
+			margin-left: 100px;
+		}
+		
+		p{
+			margin-right: 500px;
+			margin-left: 280px;
+			text-align: center;
+			color: #49595e;
+		}
+		.branches{
+            display: inline-block;
+		}
+		body
+		{
+			background-image: url('back2.png');
+			background-repeat: repeat;
+		}
+		.nav{
+			background-color: white;
+			padding: 1px;
+
+		}
+		a{
+			text-decoration: none;
+			 color: #4de85a;
+			}
+		li{
+			font-family: "Times New Roman";
+		}
+		a:hover{color: #34eb89}
+	</style>
+</head>
+<body>
+<div class="nav">
+<nav>
+	<ul>
+		<li><a href="home.html">HOME</a></li>
+		<li><a href="services.php">SERVICES</a></li>
+		<li><a href="gallery.html">GALLERY</a></li>
+		<li><img width="80" height="40" src="logo.jpg" role="button" link="home.html"></li>
+		<li><a href="career.html">CAREER</a></li>
+		<li><a href="med.html">MEDICINES</a></li>
+        <li><a href="signuplogin.html">SHOP</a></li>
+	</ul>
+</nav>
+</div>
+<table >
+<tr>
+	<td align="center" colspan="3">
+	
+		
+		<marquee scrollamount="20"
+         direction="left"
+         behavior="scroll">
+        <img   width="1000" height="400" src="pharmacist.jpg">
+        <img   width="1000" height="400" src="pharmacist.jpg">
+        </marquee>
+	
+</td>
+</tr>
+</table>
+
+	<p allign="center">
+		Radha medicals opened its first branch in 1987 at K. M. Marg Udupi. With its firm dedication to achieve customer satisfaction be the 
+		only outlet to provide exceptional service to meet the customer demands,
+		the pharmacy name became synonymous in every household, in and around udupi region.
+        The pharmacy over 25 years has met exceptional demands from its entire customer base
+        by providing excellent patient care and supply of healthcare products.
+        The company opened its 2nd modern airconditioned outlet with 24x7 service, 
+        being the first in Coastal Karnataka. 
+	</p>
+	
+<table cellspacing="80" >
+	<tr>
+		<td><h3 class="arrival">new arrival products</h3>
+<input id="margin" type="image" src="arrow2.jpg" width="48" height="48" onclick="prev();"/>
+<img id="slider" src="p4.jpg" width="300px" height="200px">
+<input type="image" src="arrow1.png" width="48" height="48" onclick="next();"/>
+<br>
+
+<script >
+	var images=["p1.jpg","p2.jpg","p4.jpg"];
+	var num=0;
+	function next(){
+		var slide=document.getElementById("slider");
+		num++;
+		if(num>=images.length)
+		{
+			num=0;
+		}
+		slide.src=images[num];
+	}
+	function prev(){
+		var slide=document.getElementById("slider");
+		num--;
+		if(num<0)
+		{
+			num=images.length-1;
+		}
+		slide.src=images[num];
+	}
+
+</script></td>
+<td>
+	<h3 class="arrival">new arrival sanitary products</h3>
+<input id="margin" type="image" src="arrow2.jpg" width="48" height="48" onclick="prev2();"/>
+<img id="slider2" src="p3.jpg" width="300px" height="200px">
+<input type="image" src="arrow1.png" width="48" height="48" onclick="next2();"/>
+<br>
+
+<script >
+	var images2=["mask.png","glouse.png","handwash.png","p3.jpg"];
+	var num=0;
+	function next2(){
+		var slide2=document.getElementById("slider2");
+		num++;
+		if(num>=images2.length)
+		{
+			num=0;
+		}
+		slide2.src=images2[num];
+	}
+	function prev2(){
+		var slide2=document.getElementById("slider2");
+		num--;
+		if(num<0)
+		{
+			num=images2.length-1;
+		}
+		slide2.src=images2[num];
+	}
+
+</script>
+</td>
+	</tr>
+</table>
+</script>
+</body>
+</html>
